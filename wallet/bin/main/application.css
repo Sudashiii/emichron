@@ -1,0 +1,84 @@
+
+#root {
+	-fx-background-color: transparent;
+}
+
+#body {
+	-fx-background-color: '#1a1a1a';
+	/*-fx-background-color: 'blue';*/
+}
+
+#body, #underlay, #overlay {
+	-fx-background-radius: 80;
+}
+
+#terminal .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#terminal .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+#terminal .scroll-pane .content {
+    -fx-background-color: transparent;
+    -fx-cursor: default;
+}
+
+#terminal .scroll-bar {
+    -fx-opacity: 0;
+}
+
+#terminal .scroll-pane {
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+}
+
+#terminal {
+	-fx-background-color: 'rgba(0, 0, 0, 0)';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+	/*-fx-text-fill: white;*/
+	-fx-accent: "blue";
+}
+
+#start, #numberThreads, #benchmark, #print, #close {
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain ;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-color: transparent;
+}
+
+#start:hover, #numberThreads:hover, #benchmark:hover, #print:hover, #close:hover {
+	-fx-opacity: 0.85;
+}
+
+#start {
+	-fx-background-image: url('../../res/l.png');
+}
+
+#numberThreads {
+	-fx-text-fill: 'rgba(255, 255, 255, 0.7)';
+	-fx-background-image: url('../../res/lm.png');
+}
+
+#numberThreads:hover {
+	-fx-opacity: 1;
+	-fx-cursor: text;
+}
+
+#benchmark {
+	-fx-background-image: url('../../res/lmm.png');
+}
+
+#print {
+	-fx-background-image: url('../../res/m.png');
+}
+
+#close {
+	-fx-background-image: url('../../res/r.png');
+}

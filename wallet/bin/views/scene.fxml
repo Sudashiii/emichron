@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="root" prefHeight="721.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+  <children>
+    <AnchorPane id="body" maxHeight="-1.0" maxWidth="-1.0" minHeight="639.0" minWidth="792.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TextArea id="terminal" fx:id="terminal" editable="false" layoutX="98.0" layoutY="130.0" prefHeight="388.0" prefWidth="596.0">
+               <font>
+                  <Font name="Consolas" size="16.0" />
+               </font>
+            </TextArea>
+            <ImageView id="overlay" fx:id="overlay" fitHeight="721.0" fitWidth="792.0">
+               <image>
+                  <Image url="@../../res/overlay.png" />
+               </image>
+            </ImageView>
+            <Button id="start" fx:id="newBlock" layoutX="64.0" layoutY="643.0" minHeight="51.0" minWidth="81.0" mnemonicParsing="false" onAction="#mineNewBlock" styleClass="btn">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font></Button>
+            <Button id="print" fx:id="printChain" layoutX="404.0" layoutY="645.0" minHeight="51.0" minWidth="127.0" mnemonicParsing="false" onAction="#printChain" styleClass="btn">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font></Button>
+            <Button id="benchmark" fx:id="benchmark" layoutX="276.0" layoutY="643.0" maxHeight="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#toogleBenchmark" styleClass="btn">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font>
+            </Button>
+            <Button id="close" fx:id="close" layoutX="680.0" layoutY="642.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#close" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font>
+            </Button>
+            <TextField id="numberThreads" fx:id="numberThreads" layoutX="158.0" layoutY="642.0" minHeight="51.0" minWidth="51.0" prefHeight="0.0" prefWidth="38.0" text="1">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font></TextField>
+                <Button id="benchmark" fx:id="benchmark1" layoutX="583.0" layoutY="645.0" maxHeight="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#printDoubleNonce" styleClass="btn" text="DN">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font>
+            </Button>
+           
+      </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+    </AnchorPane>
+  </children>
+</VBox>

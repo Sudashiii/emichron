@@ -1,0 +1,64 @@
+#root {
+	-fx-background-color: transparent;
+
+}
+
+#body {
+	-fx-background-color: '#1a1a1a';
+/** 	-fx-border-radius: 30px;
+ -fx-background-radius: 30px;*/
+}
+#label{
+	-fx-text-fill: rgba(240, 52, 52, 1);
+}
+
+#disabledInput{
+	-fx-background-color: '#1a1a1a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+}
+
+#input{
+	-fx-background-color: '#1a1a1a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+	
+	
+	-fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(240, 52, 52, 1);
+}
+
+#button{
+	
+	-fx-background-color: '#1a1a1a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+	
+	
+	-fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(240, 52, 52, 1);
+}
+
+#dropDown {
+
+	-fx-background-color: '#1a1a1a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+	-fx-border-radius: 1px;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(240, 52, 52, 1);
+}
+
+#dropDown .cell:selected{
+	-fx-background-color: '#1a1a1a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+	
+}
+
+#dropDown .list-view .list-cell {
+    -fx-background-color: '#1a1a1a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+}
+
+#dropDown .list-view .list-cell:hover {
+    -fx-background-color: '#3b3a3a';
+	-fx-text-fill: rgba(240, 52, 52, 1);
+}
